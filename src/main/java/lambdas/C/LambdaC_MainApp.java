@@ -19,7 +19,7 @@ public class LambdaC_MainApp {
 
         //Multiply
         TwoArgsInterface multiplyLambda = (int a, int b) -> a*b;
-        multiplyLambda.twoArgsOperation(2, 3);
+        result = multiplyLambda.twoArgsOperation(2, 3);
 
         printResult = (expression, data) -> String.format(expression, data);
         System.out.println(printResult.print("Multiplication result is %d", result));

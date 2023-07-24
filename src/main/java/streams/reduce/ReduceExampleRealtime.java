@@ -28,9 +28,15 @@ public class ReduceExampleRealtime {
         double sum = empList.stream()
                 .filter(employee -> employee.getEmpId() % 2 != 0)
                 .map(employee -> employee.getEmpSalary())
-                .mapToDouble(sal -> sal)
-                .sum();
+
+                .reduce(0.0, (a, b)-> a+b);
+                //-------OR-------
+                //.mapToDouble(sal -> sal)
+                //.sum();
         System.out.println("Sum of Salaries: "+sum);
+
+
+
 
         //Bonus method to do all the aggregate operations at once
         DoubleSummaryStatistics summaryStatistics = empList.stream()

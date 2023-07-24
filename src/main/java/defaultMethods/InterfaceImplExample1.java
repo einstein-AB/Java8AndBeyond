@@ -3,7 +3,7 @@ package defaultMethods;
 public class InterfaceImplExample1 implements Interface1, Interface2 {
 
     /*
-        If interface1 and 2 both and implemented in class (this example `InterfaceImplExample1`),
+        If interface1 and 2 both are implemented in class (this example `InterfaceImplExample1`),
         then COMPULSORY implementation should be provided to resolve DIAMOND problem/ ambiguity
      */
 

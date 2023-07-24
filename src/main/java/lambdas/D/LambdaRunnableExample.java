@@ -1,7 +1,6 @@
 package lambdas.D;
 
 public class LambdaRunnableExample {
-
     public static void main(String[] args) {
 
         //Inner class way
